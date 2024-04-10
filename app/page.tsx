@@ -10,37 +10,41 @@ export default function Home() {
       >
         <div className="pl-20 md:pl-40 pb-56 md:pb-20 flex flex-col gap-5 z-[10] max-w-[750px]">
           <h1 className="text-[50px] text-white font-semibold">
-            Make anything possible with
-            <span className=" text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-              {" "}
-              Web development
+            <span className=" text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500">
+              About Me
             </span>
           </h1>
-          <p className="text-gray-200 hidden md:block">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus,
-            cupiditate.
+          <p className="text-gray-200 hidden md:text-xl md:font-bold md:block">
+            I am a passionate frontend developer with a strong foundation in web
+            development technologies. With a keen eye for detail and a focus on
+            creating highly functional and visually appealing websites, I strive
+            to deliver exceptional user experiences. I am adept at translating
+            design mockups into responsive and interactive web pages, ensuring
+            cross-browser compatibility and optimal performance.
           </p>
           <div className="flex-col md:flex-row hidden md:flex gap-5">
             <Link
               href="/my-skills"
-              className=" rounded-[20px] group relative bg-blue-500 hover:bg-blue-400 px-5 py-3 text-lg text-white max-w-[200px]"
+              className=" rounded-[20px] group relative bg-transparent   px-5 py-3 text-lg text-white max-w-[200px]"
             >
-              My Skills
+              <span className="relative z-10 font-semibold">My Skills</span>
+              <div className="absolute z-[1] rounded-lg bg-gradient-to-r from-purple-950 to-red-700 duration-300 ease-in-out inset-0  w-0 group-hover:w-full" />
             </Link>
 
             <Link
               href="/my-projects"
-              className=" rounded-[20px] group relative bg-blue-500 hover:bg-blue-400 px-5 py-3 text-lg text-white max-w-[200px]"
+              className=" rounded-lg group relative bg-transparent border border-white px-5 py-3 text-lg text-white max-w-[200px]"
             >
-              <div className=" absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group-hover:opacity-20" />
-              My projects
+              <div className="absolute z-[1] rounded-lg bg-gradient-to-r from-purple-950 to-red-700 duration-300 ease-in-out inset-0  w-0 group-hover:w-full" />
+              <span className="relative z-10 font-semibold">My projects</span>
             </Link>
+
             <Link
               href="/contact-me"
-              className=" rounded-[20px] group relative bg-blue-500 hover:bg-blue-400 px-5 py-3 text-lg text-white max-w-[200px]"
+              className=" rounded-lg group relative bg-transparent border border-white px-5 py-3 text-lg text-white max-w-[200px]"
             >
-              <div className=" absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group-hover:opacity-20" />
-              Contact me
+              <div className="absolute z-[1] rounded-lg bg-gradient-to-r from-purple-950 to-red-700 duration-300 ease-in-out inset-0  w-0 group-hover:w-full" />
+              <span className="relative z-10 font-semibold">Contact me</span>
             </Link>
           </div>
         </div>
@@ -53,25 +57,26 @@ export default function Home() {
       <div className=" absolute flex bottom-10 z-[20] right-5 flex-col md:hidden gap-5">
         <Link
           href="/my-skills"
-          className=" rounded-[20px] group bg-blue-500 hover:bg-blue-400 px-5 py-3 text-lg text-white max-w-[200px]"
+          className=" rounded-[20px] group bg-gradient-to-r from-purple-950 to-red-950 px-5  py-3 text-lg text-white max-w-[200px]"
         >
           My Skills
         </Link>
 
         <Link
           href="/my-projects"
-          className=" rounded-[20px] group bg-blue-500 hover:bg-blue-400 px-5 py-3 text-lg text-white max-w-[200px]"
+          className=" rounded-[20px] group bg-transparent border border-white px-5 py-3 text-lg text-white max-w-[200px]"
         >
           My Projects
         </Link>
         <Link
           href="/contact-me"
-          className=" rounded-[20px] group bg-blue-500 hover:bg-blue-400 px-5 py-3 text-lg text-white max-w-[200px]"
+          className=" rounded-[20px] group  bg-transparent border border-white  px-5 py-3 text-lg text-white max-w-[200px]"
         >
           Contact me
         </Link>
       </div>
-      <div className=" absolute bottom-0 right-0 z-[1]">
+
+      <div className=" absolute bottom-0 right-0 z-[8]">
         <Image
           src="/horse.png"
           alt="horse"
