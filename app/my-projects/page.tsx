@@ -5,7 +5,7 @@ import React from "react";
 const page = () => {
   return (
     <div
-      style={{ backgroundImage: "url(/mountains.jpg)" }}
+      style={{ backgroundImage: "url(/Mountains.jpg)" }}
       className=" bg-center bg-cover"
     >
       <ProjectCards />
