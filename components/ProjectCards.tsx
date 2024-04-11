@@ -1,57 +1,45 @@
-"use client";
-import React, { useState } from "react";
-import { motion } from "framer-motion";
+import Link from "next/link";
 
-interface Props {
-  image: string;
-  text: string;
-  title: string;
-}
-
-const ProjectCards = ({ image, title, text }: Props) => {
-  const [isFlipped, setIsFlipped] = useState(false);
-  const [isAnimating, setIsAnimating] = useState(false);
-
-  const handleFlip = () => {
-    if (!isAnimating) {
-      setIsFlipped(!isFlipped);
-      setIsAnimating(true);
-    }
-  };
-
+const ProjectCards = () => {
   return (
-    <div
-      onClick={handleFlip}
-      className="w-[430px] h-[250px] rounded-md cursor-pointer"
-    >
-      <motion.div
-        className="flip-card-inner w-full h-full"
-        initial={false}
-        animate={{ rotateY: isFlipped ? 180 : 360 }}
-        transition={{ duration: 0.7, animationDirection: "normal" }}
-        onAnimationComplete={() => setIsAnimating(false)}
-      >
-        <div
-          style={{ backgroundImage: `url(${image})` }}
-          className="w-full h-full group flip-card-front bg-cover bg-center text-white rounded-lg p-4"
-        >
-          <div className="absolute inset-0 w-full h-full rounded-md bg-black opacity-0 group-hover:opacity-40" />
-          <div className="absolute inset-0 w-full h-full tex-[20px] pb-10 hidden group-hover:flex items-center z-[20] justify-center ">
-            Learn more &gt;
+    <div className="w-screen h-screen flex justify-center items-center">
+      <div className="w-[80%] md:px-10 flex justify-center items-center  ">
+        <div className="md:grid md:grid-cols-2 md:gap-5 flex flex-wrap">
+          <div className="group relative w-96 m-3 rounded-md cursor-pointer flex justify-center">
+            <img src="/KapitalBank.png" className="rounded-md" />
+            <span className="absolute transition-all delay-100 w-full h-full flex justify-center items-center opacity-0 group-hover:opacity-70 bg-black z-50">
+              <Link
+                href="https://kapitalbank-clone.vercel.app/"
+                className=" text-white font-bold"
+              >
+                Click and Learn more
+              </Link>
+            </span>
+          </div>
+          <div className="group relative w-96 m-3 rounded-md cursor-pointer flex justify-center">
+            <img src="/papajhons.png" className="rounded-md" />
+            <span className="absolute transition-all delay-100 w-full h-full flex justify-center items-center opacity-0 group-hover:opacity-70 bg-black z-50">
+              <Link
+                href="https://papajohns-clone.vercel.app/"
+                className=" text-white font-bold"
+              >
+                Click and Learn more
+              </Link>
+            </span>
+          </div>
+          <div className="group relative w-96 m-3 rounded-md cursor-pointer flex justify-center">
+            <img src="/portfolio.png" className="rounded-md" />
+            <span className="absolute transition-all delay-100 w-full h-full flex justify-center items-center opacity-0 group-hover:opacity-70 bg-black z-50">
+              <Link
+                href="https://kapitalbank-clone.vercel.app/"
+                className=" text-white font-bold"
+              >
+                Click and Learn more
+              </Link>
+            </span>
           </div>
         </div>
-
-        <div
-          style={{ backgroundImage: `url(${image})` }}
-          className="w-full h-full group flip-card-back bg-cover bg-center text-white rounded-lg p-4"
-        >
-          <div className="absolute inset-0 w-full h-full rounded-md bg-black opacity-50 z-[-1]" />
-          <div className="flex flex-col gap-24 py-3 z-[30]">
-            <h1 className=" text-white text-2xl font-semibold">{title}</h1>
-            <p className="  text-gray-200 text-[14px]">{text}</p>
-          </div>
-        </div>
-      </motion.div>
+      </div>
     </div>
   );
 };

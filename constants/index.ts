@@ -57,22 +57,10 @@ export const SkillData = [
     height: 80,
   },
   {
-    name: "Stripe Payment",
-    Image: "/stripe.webp",
+    name: "Material UI",
+    Image: "/materialui.png",
     width: 80,
     height: 80,
-  },
-  {
-    name: "Node js",
-    Image: "/node-js.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    name: "Mongo db",
-    Image: "/mongodb.png",
-    width: 40,
-    height: 40,
   },
 ];
 
@@ -88,28 +76,6 @@ export const Socials = [
   {
     name: "Instagram",
     src: "/discord.svg",
-  },
-];
-export const Projects = [
-  {
-    title: "Modern Nextjs Website",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    src: "/NextWebsite.png",
-  },
-  {
-    title: "Space Themed Website",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    src: "/SpaceWebsite.png",
-  },
-  {
-    title: "Modern Nextjs Portfolio",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    src: "/WebPortfolio.png",
-  },
-  {
-    title: "Matrix themed Website",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-    src: "/Matrix.png",
   },
 ];
 
