@@ -8,7 +8,7 @@ export default function Home() {
         className="flex items-center w-full h-full bg-cover bg-center"
         style={{ backgroundImage: "url(/main-bg.webp)" }}
       >
-        <div className="pl-20 md:pl-40 pb-56 md:pb-20 flex flex-col gap-5 z-[10] max-w-[750px]">
+        <div className="pl-10 md:pl-40 pb-96 md:pb-20 flex flex-col gap-5 z-[10] max-w-[750px]">
           <h1 className="text-[50px] text-white font-semibold">
             <span className=" text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500">
               About Me
@@ -54,7 +54,7 @@ export default function Home() {
         //?Mobile form
       }
 
-      <div className=" absolute flex bottom-10 z-[20] right-5 flex-col md:hidden gap-5">
+      <div className=" absolute flex bottom-40 z-[20] right-5 flex-col md:hidden gap-5">
         <Link
           href="/my-skills"
           className=" rounded-[20px] group bg-gradient-to-r from-purple-950 to-red-950 px-5  py-3 text-lg text-white max-w-[200px]"
@@ -76,13 +76,13 @@ export default function Home() {
         </Link>
       </div>
 
-      <div className=" absolute bottom-0 right-0 z-[8]">
+      <div className=" absolute bottom-0 right-0 z-[8] hidden md:block">
         <Image
           src="/horse.png"
           alt="horse"
           height={300}
           width={300}
-          className="absolute right-55 top-40"
+          className="absolute md:right-56 md:top-40 top-28 right-30 w-52 md:w-72"
         />
 
         <Image src="/cliff.webp" alt="cliff" width={480} height={480} />
@@ -93,7 +93,7 @@ export default function Home() {
           alt="tree"
           width={2000}
           height={2000}
-          className="w-full h-full"
+          className="md:w-full h-full object-cover "
         />
       </div>
       <Image

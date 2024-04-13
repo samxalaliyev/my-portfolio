@@ -15,7 +15,7 @@ const page = () => {
     >
       <div className="flex flex-col gap-20 max-w-[80%] text-center items-center">
         <div className="flex flex-col items-center gap-4">
-          <h1 className=" font-semibold text-white text-[50px]">
+          <h1 className=" font-semibold text-white text-4xl md:text-[50px]">
             Skills{" "}
             <span className=" text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-red-500">
               {" "}
@@ -31,12 +31,12 @@ const page = () => {
             delay: 0,
             disableOnInteraction: false,
           }}
-          speed={5000}
+          speed={2000}
           modules={[Autoplay]}
           className="max-w-[80%] cursor-pointer"
         >
           {SkillData.map((skill, index) => (
-            <SwiperSlide key={index}>
+            <SwiperSlide key={index} className="mx-1 md:mx-0">
               <Image
                 src={skill.Image}
                 alt={skill.name}
@@ -54,12 +54,12 @@ const page = () => {
             disableOnInteraction: false,
             reverseDirection: true,
           }}
-          speed={5000}
+          speed={2000}
           modules={[Autoplay]}
           className="max-w-[80%] cursor-pointer"
         >
           {SkillData.map((skill, index) => (
-            <SwiperSlide key={index}>
+            <SwiperSlide key={index} className="mx-1 md:mx-0">
               <Image
                 src={skill.Image}
                 alt={skill.name}
