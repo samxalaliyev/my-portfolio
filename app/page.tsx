@@ -30,11 +30,10 @@ export default function Home() {
               </span>
             </h1>
             <p className="text-gray-200 -ml-5 max-w-96 md:max-w-full md:ml-0 -mb-32 md:mb-0 text-sm md:text-xl md:font-bold md:block">
-              &quot;Hello! I&apos;m Shamkhal Aliyev, a frontend developer. I
-              specialize in building web applications using technologies like
-              React and Next.js. My focus is on enhancing user experience, and I
-              typically use libraries such as Material UI and Tailwind
-              CSS.&quot;
+              Hello! I am Shamkhal Aliyev, a frontend developer. I specialize in
+              building web applications using technologies like React and
+              Next.js. My focus is on enhancing user experience, and I typically
+              use libraries such as Material UI and Tailwind CSS.
             </p>
             <div className="flex-col md:flex-row hidden md:flex gap-5">
               <Link
