@@ -34,7 +34,7 @@ const Navigation = () => {
     >
       {isRouting && <Transition />}
       {NavLinks.map((nav) => (
-        <Link key={nav.name} href={nav.link} className=" md:m-3 mb-16 pl-4">
+        <Link key={nav.name} href={nav.link} className=" md:m-3 mb-16 px-2">
           <nav.icon
             className={`w-[24px] h-[24px] ${
               path == nav.name ? "text-purple-800" : "text-white"

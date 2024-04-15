@@ -1,6 +1,12 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 
 const ContactForm = () => {
+  const [success, setSucces] = useState(false);
+  const [error, setError] = useState(false);
+  const text = "hello";
+
   return (
     <form>
       <h2 className=" text-2xl font-bold mb-5 text-white">Contact Me </h2>
@@ -27,9 +33,22 @@ const ContactForm = () => {
           className=" w-full px-3 py-2 text-sm  placeholder-gray-400 bg-white border-0 rounded shadow "
         />
       </div>
-      <button className="px-6 py-3 mb-5 text-sm font-bold text-white uppercase transition-all duration-150 ease-linear bg-blue-500 hover:bg-blue-400">
+      <button
+        type="submit"
+        className="px-6 py-3 mb-5 text-sm font-bold text-white uppercase transition-all duration-150 ease-linear bg-blue-500 hover:bg-blue-400"
+      >
         Send a message
       </button>
+      {success && (
+        <div className=" text-green-600 font-semibold">
+          Your message has been send successfully
+        </div>
+      )}
+      {error && (
+        <div className=" text-red-600 font-semibold">
+          Your message has been send successfully
+        </div>
+      )}
     </form>
   );
 };
