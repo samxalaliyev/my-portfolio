@@ -122,6 +122,10 @@ const ContactForm: React.FC = () => {
         setSuccess(true);
         setError(false);
         setFormData({ userFirstname: "", userEmail: "", userMessage: "" }); // Inputları sıfırla
+        const timer = setTimeout(() => {
+          setSuccess(false);
+        }, 1200);
+        return () => clearTimeout(timer);
       } else {
         setError(true);
         setSuccess(false);
