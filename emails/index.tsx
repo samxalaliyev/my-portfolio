@@ -39,11 +39,7 @@ export const WelcomeEmail = ({
         <Text style={paragraph}>Hi, my name is {userFirstname},</Text>
         <Hr style={hr} />
 
-        <Text style={emailStyle}>
-          {" "}
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi,
-          nulla!{userMessage}
-        </Text>
+        <Text style={emailStyle}>{userMessage}</Text>
         <Hr style={hr} />
 
         <Text style={paragraph}>
