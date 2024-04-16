@@ -67,23 +67,23 @@ export default function Home() {
           //?Mobile form
         }
 
-        <div className=" absolute flex bottom-24 z-[20] right-5 flex-col md:hidden gap-5">
+        <div className=" absolute flex bottom-32 z-[20] right-5 flex-col md:hidden gap-5">
           <Link
             href="/my-skills"
-            className=" rounded-[20px] group bg-gradient-to-r from-purple-950 to-red-950 px-5  py-3 text-lg text-white max-w-[200px]"
+            className=" rounded-[20px] group bg-transparent border border-white p-3 text-lg text-white max-w-[200px]"
           >
             My Skills
           </Link>
 
           <Link
             href="/my-projects"
-            className=" rounded-[20px] group bg-transparent border border-white px-5 py-3 text-lg text-white max-w-[200px]"
+            className=" rounded-[20px] group bg-transparent border border-white p-3 text-lg text-white max-w-[200px]"
           >
             My Projects
           </Link>
           <Link
             href="/contact-me"
-            className=" rounded-[20px] group  bg-transparent border border-white  px-5 py-3 text-lg text-white max-w-[200px]"
+            className=" rounded-[20px] group  bg-transparent border border-white  p-3 text-lg text-white max-w-[200px]"
           >
             Contact me
           </Link>
