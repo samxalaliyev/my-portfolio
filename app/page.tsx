@@ -38,7 +38,7 @@ export default function Home() {
             <div className="flex-col md:flex-row hidden md:flex gap-5">
               <Link
                 href="/my-skills"
-                className=" rounded-[20px] group relative bg-transparent   px-5 py-3 text-lg text-white max-w-[200px]"
+                className="rounded-lg group relative bg-transparent border border-white  px-5 py-3 text-lg text-white max-w-[200px]"
               >
                 <span className="relative z-10 font-semibold">My Skills</span>
                 <div className="absolute z-[1] rounded-lg bg-gradient-to-r from-purple-950 to-red-700 duration-300 ease-in-out inset-0  w-0 group-hover:w-full" />
@@ -89,17 +89,6 @@ export default function Home() {
           </Link>
         </div>
 
-        <div className=" absolute bottom-0 right-0 z-[8] hidden md:block">
-          <Image
-            src="/horse.png"
-            alt="horse"
-            height={300}
-            width={300}
-            className="absolute md:right-56 md:top-40 top-28 right-30 w-52 md:w-72"
-          />
-
-          <Image src="/cliff.webp" alt="cliff" width={480} height={480} />
-        </div>
         <div className="absolute bottom-0 z-[5] w-full h-full">
           <Image
             src="/trees.webp"
